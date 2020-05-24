@@ -1,0 +1,287 @@
+/******************* GENERAL *****************/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.6rem;
+}
+
+a {
+	text-decoration: none;
+	font-size: 1.4rem;
+	color: black;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.clearfix::after {
+	content:"";
+	clear: both;
+	display: table;
+}
+
+.active {
+	background: #000000;
+	border-radius: 3px;
+}
+
+img {
+	width: 100%;
+}
+
+#contact ul {
+		list-style-type: none;
+		 padding: 0;
+
+}
+
+#contact .info {
+	font-size: 1.5rem;
+}
+
+main {
+	padding-top: 189.72px;
+}
+
+
+/******************* HEADER *****************/
+
+header {
+	background: #343aeb;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+header .logo-container {
+	padding: 20px;
+}
+
+header img {
+	width: 160px;
+}
+
+/******************* NAVIGATION *****************/
+
+nav ul {
+	background-color: #34cfeb;
+	text-align: center;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav li a {
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none; 
+	display: inline-block;
+	padding: 5px 10px;
+}
+ 
+nav li:hover {
+	background-color: #070359;
+}
+
+/******************* GALLERY *********************/
+
+#gallery {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#gallery img {
+	width: 100%;
+}
+
+#gallery .item {
+	flex: 0 1 50%;
+	padding: 15px;
+	position: relative;
+}
+
+#gallery .item:hover {
+	background-color: #f2ff00;
+}
+
+#gallery .picture {
+	line-height: 0;
+}
+
+#gallery .caption img {
+	width: 30px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+
+/****************** ABOUT *****************/
+
+#about img {
+	border-radius: 100%;
+	padding: 25px 0; 
+}
+
+
+/****************** FOOTER ***************/
+
+footer.main {
+	text-align: center;
+	padding: 15px;
+}
+
+footer.main img {
+   width: 24px;
+}
+
+footer.main p {
+	font-size: 1.2rem;
+}
+
+footer.main a {
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+
+@media only screen and (min-width: 768px) {
+ 
+/************** GALLERY ***************/
+
+#gallery .item {
+	flex: 0 1 33.333%;
+}
+
+/************** ABOUT ***************/
+
+	#about h1 {
+		font-size: 2.2rem;
+	}
+
+	#about img {
+		width: 70%;
+	}
+
+	#about .profile-pic {
+		float: left;
+		width: 50%;
+		padding: 15px;
+		text-align: center;
+	}
+
+	#about .description {
+		float: right;
+		width: 50%;
+		padding: 30px 15px 15px;
+	}
+
+	
+
+/************** CONTACT ***************/
+
+	#contact h1 {
+		font-size: 2rem;
+	}
+
+
+	#contact li {
+		padding: 5px 0;
+	}
+
+	#contact .info {
+		float: left;
+		width: 70%;
+		text-align: left;
+		font-size: 1.5rem;
+		padding: 20px 100px 200px 10px;
+	}
+
+	#contact .contacts {
+		float: right;
+		width: 30%;
+		padding: 20px 10px 200px 100px;
+	}
+
+	#contact li a {
+		font-size: 1.5rem;
+		 
+	}
+
+	#contact .material-icons {
+		float: left;
+	}
+
+	#contact .contacts a {
+		margin: 3px 0 0 5px;
+		display: inline-block;
+
+	}	
+	}
+
+
+
+@media only screen and (min-width: 992px) {
+ 
+ nav li a {
+ 	transition: background .3s;
+  }
+
+ nav li a:hover {
+	background: #f542ec;
+	border-radius: 3px;
+	}
+
+#gallery .item: {
+	 transition: opacity .3s;
+}
+
+#gallery .item:hover {
+	 opacity: .7;
+}
+
+	nav ul{
+		background: #343aeb;
+
+}
+
+ 	header .logo-container {
+ 		 
+ 	}
+
+  header {
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+/************** GALLERY ***************/
+
+#gallery .item:nth-child(2n+1) {
+	clear: left;
+}
+
+}
